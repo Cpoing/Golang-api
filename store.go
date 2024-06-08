@@ -1,8 +1,10 @@
 package main
 
+import "database/sql"
+
 type Store interface {
   // users
-  CreateUser() erro
+  CreateUser() error
 }
 
 type Storage struct{

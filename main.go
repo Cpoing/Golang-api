@@ -1,5 +1,11 @@
 package main
 
+import (
+  "log"
+
+  "github.com/go-sql-driver/mysql"
+)
+
 func main() {
   cfg := mysql.Config{
     User:                 Envs.DBUser,
